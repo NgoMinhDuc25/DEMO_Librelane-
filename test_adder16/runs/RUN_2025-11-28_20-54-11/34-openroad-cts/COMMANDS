@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/34-openroad-cts/or_metrics_out.json /nix/store/j0zxygszwgin6pwkx80mnja2sn8pcc6d-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/openroad/cts.tcl

@@ -1,0 +1,78 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/ngoduc/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/ngoduc/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/ngoduc/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/27-openroad-globalplacement/adder16.odb'…
+Reading design constraints file at '/nix/store/j0zxygszwgin6pwkx80mnja2sn8pcc6d-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 0.96
+[INFO] Setting input delay to: 0.96
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO RSZ-0027] Inserted 34 input buffers.
+[INFO RSZ-0028] Inserted 17 output buffers.
+[INFO RSZ-0058] Using max wire length 6335um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |       215
+       10 |       6 |       0 |             0 |       205
+       20 |      12 |       0 |             0 |       195
+       30 |      21 |       0 |             0 |       185
+       40 |      31 |       0 |             0 |       175
+       50 |      41 |       0 |             0 |       165
+       60 |      50 |       0 |             0 |       155
+       70 |      59 |       0 |             0 |       145
+       80 |      68 |       0 |             0 |       135
+       90 |      78 |       0 |             0 |       125
+      100 |      88 |       0 |             0 |       115
+      110 |      98 |       0 |             0 |       105
+      120 |     108 |       0 |             0 |        95
+      130 |     118 |       0 |             0 |        85
+      140 |     127 |       0 |             0 |        75
+      150 |     135 |       0 |             0 |        65
+      160 |     147 |       4 |             2 |        55
+      170 |     155 |       4 |             2 |        45
+      180 |     159 |       4 |             2 |        35
+      190 |     159 |       4 |             2 |        25
+      200 |     159 |       4 |             2 |        15
+      210 |     159 |       4 |             2 |         5
+    final |     159 |       4 |             2 |         0
+---------------------------------------------------------
+[INFO RSZ-0035] Found 2 fanout violations.
+[INFO RSZ-0038] Inserted 4 buffers in 2 nets.
+[INFO RSZ-0039] Resized 159 instances.
+Placement Analysis
+---------------------------------
+total displacement        496.5 u
+average displacement        1.9 u
+max displacement           16.6 u
+original HPWL            2091.9 u
+legalized HPWL           2628.9 u
+delta HPWL                   26 %
+
+[INFO DPL-0020] Mirrored 67 instances
+[INFO DPL-0021] HPWL before            2628.9 u
+[INFO DPL-0022] HPWL after             2545.5 u
+[INFO DPL-0023] HPWL delta               -3.2 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                38     142.64
+  Tap cell                                 42      52.55
+  Timing Repair Buffer                     55     237.73
+  Inverter                                  2       7.51
+  Sequential cell                          17     425.41
+  Multi-Input combinational cell          110     753.22
+  Total                                   264    1619.05
+Writing OpenROAD database to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/31-openroad-repairdesignpostgpl/adder16.odb'…
+Writing netlist to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/31-openroad-repairdesignpostgpl/adder16.nl.v'…
+Writing powered netlist to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/31-openroad-repairdesignpostgpl/adder16.pnl.v'…
+Writing layout to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/31-openroad-repairdesignpostgpl/adder16.def'…
+Writing timing constraints to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/31-openroad-repairdesignpostgpl/adder16.sdc'…

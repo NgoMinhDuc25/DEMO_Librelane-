@@ -1,0 +1,7 @@
+{
+  "DESIGN_NAME": "adder16",
+  "VERILOG_FILES": ["dir::adder16.v"],
+  "CLOCK_PERIOD": 4.8,
+  "CLOCK_PORT": "clk"
+}
+

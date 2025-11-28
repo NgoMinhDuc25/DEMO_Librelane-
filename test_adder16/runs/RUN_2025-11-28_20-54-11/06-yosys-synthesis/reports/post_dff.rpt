@@ -1,0 +1,38 @@
+100. Printing statistics.
+
+=== adder16 ===
+
+   Number of wires:                118
+   Number of wire bits:            179
+   Number of public wires:           8
+   Number of public wire bits:      69
+   Number of ports:                  7
+   Number of port bits:             52
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                144
+     $_ANDNOT_                      21
+     $_AND_                          8
+     $_MUX_                         17
+     $_NAND_                         8
+     $_NOR_                         15
+     $_ORNOT_                        2
+     $_OR_                          25
+     $_XNOR_                        18
+     $_XOR_                         13
+     sky130_fd_sc_hd__dfrtp_2       17
+
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '\adder16': 446.678400
+     of which used for sequential elements: 446.678400 (100.00%)
+

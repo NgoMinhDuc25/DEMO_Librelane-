@@ -1,0 +1,39 @@
+Reading OpenROAD database at '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/31-openroad-repairdesignpostgpl/adder16.odb'…
+Reading library file at '/home/ngoduc/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading design constraints file at '/nix/store/j0zxygszwgin6pwkx80mnja2sn8pcc6d-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 0.96
+[INFO] Setting input delay to: 0.96
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL            2545.5 u
+legalized HPWL           2628.9 u
+delta HPWL                    3 %
+
+[INFO DPL-0020] Mirrored 67 instances
+[INFO DPL-0021] HPWL before            2628.9 u
+[INFO DPL-0022] HPWL after             2545.5 u
+[INFO DPL-0023] HPWL delta               -3.2 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                38     142.64
+  Tap cell                                 42      52.55
+  Timing Repair Buffer                     55     237.73
+  Inverter                                  2       7.51
+  Sequential cell                          17     425.41
+  Multi-Input combinational cell          110     753.22
+  Total                                   264    1619.05
+Writing OpenROAD database to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/33-openroad-detailedplacement/adder16.odb'…
+Writing netlist to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/33-openroad-detailedplacement/adder16.nl.v'…
+Writing powered netlist to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/33-openroad-detailedplacement/adder16.pnl.v'…
+Writing layout to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/33-openroad-detailedplacement/adder16.def'…
+Writing timing constraints to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/33-openroad-detailedplacement/adder16.sdc'…

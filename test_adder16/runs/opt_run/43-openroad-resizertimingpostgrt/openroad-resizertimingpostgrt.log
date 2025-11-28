@@ -1,0 +1,161 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/ngoduc/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/ngoduc/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/ngoduc/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/ngoduc/test_adder16/runs/opt_run/42-openroad-repairantennas/1-diodeinsertion/adder16.odb'…
+Reading design constraints file at '/home/ngoduc/test_adder16/adder16.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Setting RC values…
+[INFO] Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO] Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 4 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 18
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 248
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal       2450          1196          51.18%
+met2       Vertical         1986          1199          39.63%
+met3       Horizontal       1220           774          36.56%
+met4       Vertical          828           468          43.48%
+met5       Horizontal        236           108          54.24%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 1031
+[INFO GRT-0198] Via related Steiner nodes: 9
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 1264
+[INFO GRT-0112] Final usage 3D: 4243
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1              1196           211           17.64%             0 /  0 /  0
+met2              1199           233           19.43%             0 /  0 /  0
+met3               774             7            0.90%             0 /  0 /  0
+met4               468             0            0.00%             0 /  0 /  0
+met5               108             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total             3745           451           12.04%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 5775 um
+[INFO GRT-0014] Routed nets: 239
+[INFO RSZ-0094] Found 3 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 3 out of 3 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |            | Endpts | Endpt
+---------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |   -0.088 |       -0.1 |      3 | _281_/D
+       10 |       0 |       4 |        0 |      0 |     5 |   -0.034 |       -0.0 |      3 | _281_/D
+       16 |       0 |       8 |        0 |      0 |     6 |    0.002 |        0.0 |      2 | _281_/D
+       17 |       0 |       8 |        0 |      0 |     6 |    0.002 |        0.0 |      1 | _281_/D
+       19 |       0 |       8 |        0 |      0 |     6 |    0.002 |        0.0 |      0 | _281_/D
+    final |       0 |       8 |        0 |      0 |     6 |    0.002 |        0.0 |      2 | _281_/D
+---------------------------------------------------------------------------------------------------
+[INFO RSZ-0041] Resized 8 instances.
+[INFO RSZ-0043] Swapped pins on 6 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0033] No hold violations found.
+Placement Analysis
+---------------------------------
+total displacement          7.7 u
+average displacement        0.0 u
+max displacement            3.2 u
+original HPWL            2911.1 u
+legalized HPWL           3090.2 u
+delta HPWL                    6 %
+
+[INFO DPL-0020] Mirrored 92 instances
+[INFO DPL-0021] HPWL before            3090.2 u
+[INFO DPL-0022] HPWL after             2916.3 u
+[INFO DPL-0023] HPWL delta               -5.6 %
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 4 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 18
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 248
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal       2450          1196          51.18%
+met2       Vertical         1986          1199          39.63%
+met3       Horizontal       1220           774          36.56%
+met4       Vertical          828           468          43.48%
+met5       Horizontal        236           108          54.24%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 1031
+[INFO GRT-0198] Via related Steiner nodes: 9
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 1262
+[INFO GRT-0112] Final usage 3D: 4237
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1              1196           210           17.56%             0 /  0 /  0
+met2              1199           234           19.52%             0 /  0 /  0
+met3               774             7            0.90%             0 /  0 /  0
+met4               468             0            0.00%             0 /  0 /  0
+met5               108             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total             3745           451           12.04%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 5761 um
+[INFO GRT-0014] Routed nets: 239
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                46     172.67
+  Tap cell                                 50      62.56
+  Clock buffer                              3      75.07
+  Timing Repair Buffer                     51     232.72
+  Inverter                                  3      16.27
+  Clock inverter                            1       5.00
+  Sequential cell                          17     425.41
+  Multi-Input combinational cell          130    1008.47
+  Total                                   301    1998.17
+Writing OpenROAD database to '/home/ngoduc/test_adder16/runs/opt_run/43-openroad-resizertimingpostgrt/adder16.odb'…
+Writing netlist to '/home/ngoduc/test_adder16/runs/opt_run/43-openroad-resizertimingpostgrt/adder16.nl.v'…
+Writing powered netlist to '/home/ngoduc/test_adder16/runs/opt_run/43-openroad-resizertimingpostgrt/adder16.pnl.v'…
+Writing layout to '/home/ngoduc/test_adder16/runs/opt_run/43-openroad-resizertimingpostgrt/adder16.def'…
+Writing timing constraints to '/home/ngoduc/test_adder16/runs/opt_run/43-openroad-resizertimingpostgrt/adder16.sdc'…

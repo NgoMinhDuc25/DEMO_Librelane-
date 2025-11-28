@@ -1,0 +1,36 @@
+digraph "adder16" {
+label="adder16";
+rankdir="LR";
+remincross=true;
+n5 [ shape=diamond, label="add_result", color="black", fontcolor="black"];
+n6 [ shape=octagon, label="carry", color="black", fontcolor="black"];
+n7 [ shape=octagon, label="sum", color="black", fontcolor="black"];
+n8 [ shape=octagon, label="b", color="black", fontcolor="black"];
+n9 [ shape=octagon, label="a", color="black", fontcolor="black"];
+n10 [ shape=octagon, label="en", color="black", fontcolor="black"];
+n11 [ shape=octagon, label="rst_n", color="black", fontcolor="black"];
+n12 [ shape=octagon, label="clk", color="black", fontcolor="black"];
+c15 [ shape=record, label="{{<p13> A}|$3\n$logic_not|{<p14> Y}}",  ];
+c17 [ shape=record, label="{{<p13> A|<p16> B}|$1\n$add|{<p14> Y}}",  ];
+x1 [ shape=record, style=rounded, label="<s0> 16:16 - 0:0 ", color="black", fontcolor="black" ];
+x2 [ shape=record, style=rounded, label="<s0> 15:0 - 15:0 ", color="black", fontcolor="black" ];
+p0 [shape=box, style=rounded, label="PROC $2\n/home/ngoduc/test_adder16/adder16.v:22.5-30.8", ];
+x3 [shape=point, ];
+c15:p14:e -> p0:w [color="black", fontcolor="black", label=""];
+n10:e -> p0:w [color="black", fontcolor="black", label=""];
+n11:e -> c15:p13:w [color="black", fontcolor="black", label=""];
+n11:e -> p0:w [color="black", fontcolor="black", label=""];
+n12:e -> p0:w [color="black", fontcolor="black", label=""];
+c17:p14:e -> x3:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+x3:e -> n5:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n5:e -> x1:s0:w [color="black", fontcolor="black", label=""];
+n5:e -> x2:s0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+p0:e -> n6:w [color="black", fontcolor="black", label=""];
+n6:e -> p0:w [color="black", fontcolor="black", label=""];
+p0:e -> n7:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n7:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n8:e -> c17:p16:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n9:e -> c17:p13:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+x1:e -> p0:w [color="black", fontcolor="black", label=""];
+x2:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+}

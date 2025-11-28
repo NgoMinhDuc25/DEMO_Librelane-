@@ -1,0 +1,91 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/ngoduc/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/ngoduc/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/ngoduc/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/34-openroad-cts/adder16.odb'…
+Reading design constraints file at '/nix/store/j0zxygszwgin6pwkx80mnja2sn8pcc6d-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 0.96
+[INFO] Setting input delay to: 0.96
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO RSZ-0094] Found 9 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 9 out of 9 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |            | Endpts | Endpt
+---------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |   -1.278 |       -6.1 |      9 | _240_/D
+       10 |       0 |       4 |        0 |      0 |     5 |   -1.108 |       -4.9 |      9 | _240_/D
+       20 |       0 |       9 |        4 |      0 |     8 |   -0.969 |       -3.9 |      9 | _240_/D
+       30 |       0 |      17 |        6 |      0 |     9 |   -0.952 |       -3.7 |      9 | _240_/D
+       33 |       0 |      17 |        7 |      0 |    10 |   -0.851 |       -2.9 |      9 | _240_/D
+       37 |       0 |      17 |        8 |      0 |    10 |   -0.851 |       -2.9 |      9 | _240_/D
+       40 |       0 |      18 |        8 |      0 |    11 |   -0.854 |       -3.0 |      9 | _240_/D
+       41 |       0 |      17 |        9 |      0 |    11 |   -0.850 |       -3.0 |      9 | _240_/D
+       50 |       0 |      22 |        9 |      0 |    14 |   -0.867 |       -2.7 |      9 | _240_/D
+       51 |       0 |      19 |       10 |      0 |    11 |   -0.850 |       -2.9 |      9 | _240_/D
+       59 |       0 |      20 |       11 |      0 |    11 |   -0.850 |       -2.8 |      9 | _240_/D
+       60 |       0 |      20 |       11 |      0 |    11 |   -0.850 |       -2.8 |      9 | _240_/D
+       64 |       0 |      20 |       11 |      0 |    11 |   -0.850 |       -2.8 |      8 | _240_/D
+       70 |       0 |      24 |       13 |      0 |    11 |   -0.848 |       -2.8 |      8 | _240_/D
+       74 |       0 |      23 |       14 |      0 |    11 |   -0.839 |       -3.2 |      8 | _240_/D
+       75 |       0 |      23 |       14 |      0 |    11 |   -0.839 |       -3.2 |      7 | _240_/D
+       76 |       0 |      23 |       14 |      0 |    11 |   -0.839 |       -3.2 |      6 | _240_/D
+      77* |       0 |      23 |       14 |      0 |    11 |   -0.839 |       -3.2 |      7 | _240_/D
+      78* |       0 |      23 |       14 |      0 |    11 |   -0.839 |       -3.2 |      7 | _240_/D
+      79* |       0 |      23 |       14 |      0 |    11 |   -0.839 |       -3.2 |      7 | _240_/D
+      80* |       0 |      23 |       14 |      0 |    11 |   -0.839 |       -3.2 |      7 | _240_/D
+      80* |       0 |      23 |       14 |      0 |    11 |   -0.839 |       -3.2 |      7 | _240_/D
+      82* |       0 |      24 |       14 |      0 |    11 |   -0.839 |       -3.2 |      7 | _240_/D
+      83* |       0 |      24 |       14 |      0 |    11 |   -0.839 |       -3.2 |      7 | _240_/D
+      84* |       0 |      24 |       14 |      0 |    11 |   -0.839 |       -3.2 |      7 | _240_/D
+    final |       0 |      24 |       14 |      0 |    11 |   -0.839 |       -3.2 |      7 | _240_/D
+---------------------------------------------------------------------------------------------------
+[INFO RSZ-0040] Inserted 4 buffers.
+[INFO RSZ-0041] Resized 24 instances.
+[INFO RSZ-0043] Swapped pins on 11 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0046] Found 32 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   WNS   |   TNS   | Endpoint
+---------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |   0.044 |   0.000 | _226_/D
+    final |       0 |      16 |            0 |   0.100 |   0.000 | _239_/D
+---------------------------------------------------------------------------
+[INFO RSZ-0032] Inserted 16 hold buffers.
+Placement Analysis
+---------------------------------
+total displacement        347.5 u
+average displacement        1.2 u
+max displacement           17.7 u
+original HPWL            2732.4 u
+legalized HPWL           3136.5 u
+delta HPWL                   15 %
+
+[INFO DPL-0020] Mirrored 75 instances
+[INFO DPL-0021] HPWL before            3136.5 u
+[INFO DPL-0022] HPWL after             2999.4 u
+[INFO DPL-0023] HPWL delta               -4.4 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                38     142.64
+  Tap cell                                 42      52.55
+  Clock buffer                              3      75.07
+  Timing Repair Buffer                     75     462.94
+  Inverter                                  2       7.51
+  Clock inverter                            1       5.00
+  Sequential cell                          17     425.41
+  Multi-Input combinational cell          110     815.78
+  Total                                   288    1986.91
+Writing OpenROAD database to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/36-openroad-resizertimingpostcts/adder16.odb'…
+Writing netlist to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/36-openroad-resizertimingpostcts/adder16.nl.v'…
+Writing powered netlist to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/36-openroad-resizertimingpostcts/adder16.pnl.v'…
+Writing layout to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/36-openroad-resizertimingpostcts/adder16.def'…
+Writing timing constraints to '/home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/36-openroad-resizertimingpostcts/adder16.sdc'…

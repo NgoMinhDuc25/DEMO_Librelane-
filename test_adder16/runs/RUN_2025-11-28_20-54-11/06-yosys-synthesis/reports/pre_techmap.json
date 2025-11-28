@@ -1,0 +1,53 @@
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/ngoduc/test_adder16/runs/RUN_2025-11-28_20-54-11/tmp/4d0a11b58ba04ffcacbb67aa3c95362b.lib ",
+   "modules": {
+      "\\adder16": {
+         "num_wires":         101,
+         "num_wire_bits":     162,
+         "num_pub_wires":     8,
+         "num_pub_wire_bits": 69,
+         "num_ports":         7,
+         "num_port_bits":     52,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         127,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 21,
+            "$_AND_": 8,
+            "$_DFFE_PN0P_": 17,
+            "$_NAND_": 8,
+            "$_NOR_": 15,
+            "$_ORNOT_": 2,
+            "$_OR_": 25,
+            "$_XNOR_": 18,
+            "$_XOR_": 13
+         }
+      }
+   },
+      "design": {
+         "num_wires":         101,
+         "num_wire_bits":     162,
+         "num_pub_wires":     8,
+         "num_pub_wire_bits": 69,
+         "num_ports":         7,
+         "num_port_bits":     52,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         127,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 21,
+            "$_AND_": 8,
+            "$_DFFE_PN0P_": 17,
+            "$_NAND_": 8,
+            "$_NOR_": 15,
+            "$_ORNOT_": 2,
+            "$_OR_": 25,
+            "$_XNOR_": 18,
+            "$_XOR_": 13
+         }
+      }
+}
+
